@@ -1,0 +1,153 @@
+:root {
+  --primary: #FB9E55;
+  --primary_hover: #ec9451;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+  font-size: 14px;
+  position: relative;
+}
+
+.navbar {
+  font-weight: 500;
+}
+
+.navbar .navbar-nav .nav-link {
+  border-bottom: 3px solid transparent;
+  border-radius: 3px;
+}
+
+.navbar .navbar-nav .nav-link::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 3px;
+  border-radius: 2px;
+  background: var(--primary);
+  transition: width .3s;
+}
+.navbar .navbar-nav .active::after {
+  width: 100%;
+}
+
+.navbar .navbar-nav .nav-link:hover::after {
+  width: 100%;
+  transition: width .3s;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: var(--primary);
+  border-color: var(--primary);
+}
+
+.btn-primary:hover{
+  background-color: var(--primary_hover);
+  border-color: var(--primary_hover); 
+  color: #fff;
+}
+
+.btn.btn-primary.active,
+.btn.btn-primary:active {
+  background-color: var(--primary_hover)!important; 
+  color: #fff;
+  border-color: var(--primary_hover)!important;
+  box-shadow: 0 0 0 0.2rem #FB9E5550!important;
+}
+
+.btn-primary:focus {
+  color: #fff;
+  background-color: var(--primary);
+  border-color: var(--primary);
+  box-shadow: 0 0 0 0.2rem #FB9E5550;
+}
+
+.bg-dark {
+  background-color: #19282e!important;
+}
+
+.jumbotron {
+  background: none;
+  height: 60vh;
+}
+
+a.email {
+  font-size: 12px;
+  color: rgba(0,0,0,.5);
+  text-decoration: none;
+}
+a.email:hover {
+  color: rgba(0,0,0,.7);
+  text-decoration: none;
+}
+
+div#about {
+  padding: 100px 0px;
+}  
+
+div#my-works {
+  padding: 100px 0px;
+} 
+
+#skills i {
+  color: #ee4323;
+}
+
+#skills i:hover,
+img.icon:hover {
+  transform: scale(1.1);
+}
+#contact .icon {
+  display: inline-block;
+}
+
+#contact .icon-box {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  background: var(--primary)
+}
+
+#contact .icon-box:hover {
+  background: var(--primary_hover);
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+#contact a {
+  position: absolute;
+  font-size: 1.5rem;
+  color: white;
+}
+
+footer {
+  background: #121b1e;
+  color: #ffffff;
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {  
+  .jumbotron .illustration img {
+    position: relative;
+    right: 0;
+    top: -10vmin;
+    height: 60vmin;
+  }
+}
+
+@media (max-width: 992px) { 
+
+  .jumbotron .illustration img {
+    display: none;
+  } 
+
+}
