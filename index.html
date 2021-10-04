@@ -1,1 +1,231 @@
-Hello
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <!-- Fontawesome 5 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- my style -->
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio | Muhammad Awaludin</title>
+  </head>
+  <body>
+    <nav id="top-nav" class="navbar fixed-top navbar-expand-lg navbar-light bg-white">
+      <div class="container">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ml-auto">
+            <a class="nav-link active" aria-current="page" href="#home" id="to-home">HOME</a>
+            <a class="nav-link" href="#about" id="to-about">ABOUT ME</a>
+            <a class="nav-link" href="#experience" id="to-experience">EXPERIENCE</a>
+            <a class="nav-link" href="#projects" id="to-projects">PROJECTS</a>
+            <a class="nav-link" href="#skills" id="to-skills">SKILLS</a>
+            <a class="nav-link" href="#contact" id="to-contact">CONTACT</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- hero -->
+    <section id="home" class="hero">
+      <div class="jumbotron" style="margin-top: 10vh;">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-7 col-md-12">
+              <h1 class="display-5">M. Awaludin</h1>
+              <h6>Web Developer | Design Enthusiast</h6>
+              <a href="mailto:am.awaludinmuhammad@gmail.com" target="_blank" class="email"><i class="fas fa-envelope mr-1"></i> am.awaludinmuhammad@gmail.com</a> <br>
+              <hr class="my-4">
+              <p>Mendalami web development sejak tahun 2019. Lebih sering bekerja pada bagian backend dengan PHP sebagai bahasa pemrograman utama, dan Laravel sebagai framework.</p>
+              <a class="btn btn-primary btn-md" href="#about" role="button">Selengkapnya</a>
+            </div>
+            <div class="col-lg-4 col-md-12">
+              <div class="illustration">
+                <img class="ml-auto" src="/img/coder.png" alt="illustration">
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <div id="about" class="py-5 bg-light">
+      <div class="container">
+        <h4 class="text-center mt-5">ABOUT ME</h4>
+        <div class="row">
+          <div class="col-lg-5 col-md-12">
+            <img src="/img/13.png" alt="" class="w-100">
+          </div>
+          <div class="col-lg-7 col-md-12">
+
+            <p class="mt-4">Nama saya Muhammad Awaludin, berasal dari Banjarnegara, Jawa Tengah. Saya merupakan fresh graduate dari Universitas AMIKOM Yogyakarta program studi D3-Teknik Informatika.
+            </p>
+            <p>
+              Memiliki passion di bidang web development, dan sudah beberapa kali terlibat dalam pengerjaan proyek website menggunakan bahasa pemrograman PHP dengan framework Laravel, serta jQuery untuk membuat website lebih interaktif. <br>
+              Saya terbiasa menggunakan Git sebagai Version Control System saat bekerja dengan tim.
+            </p>
+            <p>
+              Saya juga tertarik di bidang desain, khususnya desain Ilustrasi dan User Interface. <br> 
+              Biasanya saya menggambar di waktu luang, dan beberapa hasilnya saya upload di Instagram.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="experience" class="py-5">
+      <div class="container">
+        <h4 class="text-center mt-5">WORKING EXPERIENCE</h4>
+        <div class="row mt-5">
+          <div class="col-lg-10 col-12 mx-auto text-justify">
+            <div class="experience">
+              <strong>Kerja Praktek di PT. Redi Teknologi Nusantara (September 2020 - Januari 2021)</strong>
+              <h6 class="mt-3">Jobdesc:</h6>
+              <p>
+                Membuat website yang digunakan sebagai Resource Server/Server penyedia data sehingga memungkinkan aplikasi pihak ketiga untuk melakukan integrasi. Website ini dibuat menggunakan framework Laravel dan sistem API Authentication dibuat menggunakan Passport Package.
+              </p>
+            </div>
+            <div class="experience">
+              <strong>PT. Redi Teknologi Nusantara (Maret 2021 - Mei 2021)</strong>
+              <h6 class="mt-3">Jobdesc:</h6>
+              <ul>
+                <li>Melakukan integrasi dengan beberapa aplikasi pihak ketiga seperti Telegram dan beberapa vendor email marketing.</li>
+                <li>Melakukan penambahan fitur.</li>
+                <li>Melakukan refactor code, seperti memindahkan logic beberapa fitur ke dalam Laravel Job.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="projects" class="py-5 bg-light">
+      <div class="container">
+        <h4 class="text-center mt-5">PROJECTS</h4>
+        <div class="row mt-5">
+          <div class="text-center col-lg-4 col-12">1</div>
+          <div class="text-center col-lg-4 col-12">2</div>
+          <div class="text-center col-lg-4 col-12">3</div>
+        </div>
+      </div>
+    </div>
+
+    <div id="skills" class="py-5">
+      <div class="container">
+        <h4 class="text-center mt-5">SKILLS</h4>
+        <div class="row mt-5">
+          <div class="col-lg-2 col-4 text-center">
+            <i class="fab fa-html5" style="font-size: 3rem;"></i><br>
+            <small>HTML</small><br>
+          </div>
+          <div class="col-lg-2 col-4 text-center">
+            <i class="fab fa-css3" style="font-size: 3rem;"></i><br>
+            <small>CSS</small>
+          </div>
+          <div class="col-lg-2 col-4 text-center">
+            <i class="fab fa-js-square" style="font-size: 3rem;"></i><br>
+            <small>JavaScript (jQuery)</small>
+          </div>
+          <div class="col-lg-2 col-4 text-center">
+            <i class="fab fa-php" style="font-size: 3rem;"></i><br>
+            <small>PHP</small>
+          </div>
+          <div class="col-lg-2 col-4 text-center">
+            <i class="fab fa-laravel" style="font-size: 3rem;"></i><br>
+            <small>Laravel</small>
+          </div>
+          <div class="col-lg-2 col-4 text-center">
+            <img class="icon" src="/img/ci.png" alt="ci" style="height: 50px;"><br>
+            <small>Codeigniter</small>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="contact" class="py-4 bg-dark mt-4">
+      <div class="container">
+        <h4 class="text-center mt-5 text-white">GET IN TOUCH</h4>
+        <div class="text-center mt-3">
+          <div class="icon">
+            <div class="icon-box mr-3">
+              <a href="https://instagram.com/am.awaludinmuhammad" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+          <div class="icon">
+            <div class="icon-box mr-3">
+              <a href="mailto:am.awaludinmuhammad@gmail.com" target="_blank" title="Email"><i class="far fa-envelope"></i></a>
+            </div>
+          </div>
+          <div class="icon">
+            <div class="icon-box mr-3">
+              <a href="https://linkedin.com/in/am-awaludinmuhammad" target="_blank" title="Linkedin"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+          <div class="icon">
+            <div class="icon-box mr-3">
+              <a href="https://gitlab.com/am.awaludinmuhammad" target="_blank" title="Gitlab"><i class="fab fa-gitlab"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="py-3 text-center pt-3">
+      &copy; 2021 Muhammad Awaludin
+    </footer>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+
+    <script>
+      $('#to-home').click(function() {
+        $('.nav-link').removeClass('active');
+        $(this).addClass('active');
+      });
+      $('#to-about').click(function() {
+        $('.nav-link').removeClass('active');
+        $(this).addClass('active');
+      });
+      $('#to-experience').click(function() {
+        $('.nav-link').removeClass('active');
+        $(this).addClass('active');
+      });
+      $('#to-projects').click(function() {
+        $('.nav-link').removeClass('active');
+        $(this).addClass('active');
+      });
+      $('#to-skills').click(function() {
+        $('.nav-link').removeClass('active');
+        $(this).addClass('active');
+      });
+      $('#to-contact').click(function() {
+        $('.nav-link').removeClass('active');
+        $(this).addClass('active');
+      });
+    </script>
+  </body>
+</html>
