@@ -134,20 +134,16 @@ footer {
   color: #ffffff;
 }
 
+
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {  
-  .jumbotron .illustration img {
-    position: relative;
-    right: 0;
-    top: -10vmin;
-    height: 60vmin;
+@media (min-width: 992px) {    
+  .jumbotron {
+    height: 60vh;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('img/hero2.png');
+    background-position: center;
+    position:relative;
   }
-}
-
-@media (max-width: 992px) { 
-
-  .jumbotron .illustration img {
-    display: none;
-  } 
-
 }
